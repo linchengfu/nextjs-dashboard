@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { photos } from "./data";
+import { Demo } from "./ui/demo";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
           <img width="200" src={src} className="m-1" />
         </Link>
       ))}
+      {Demo}
     </main>
   );
 }
